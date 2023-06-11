@@ -1,5 +1,5 @@
 let harryStylesImages=[
-    "https://www.last.fm/music/Harry+Styles/+images/9f41276d612203756f6b5c9d4a0271d2",
+    "",
     "https://www.last.fm/music/Harry+Styles/+images/25d0e8ba8b094bbb2d794cbc9f740eca",
     "https://www.last.fm/music/Harry+Styles/+images/8f7e3d357e1b512958923e37c505658d",
     "https://www.last.fm/music/Harry+Styles/+images/62b7d7e1b66c582fd20ca1de855f0ae9",
@@ -13,4 +13,8 @@ const imgs=document.getElementsByTagName("img")
 for(let i=0;i<imgs.length;i++) {
     const randomImg = Math.floor(Math.random()*harryStylesImages.length); 
     imgs[i].src=harryStylesImages[randomImg];
+}
+const headers=document.getElementsByTagName("h2")
+for(let i=0;i<headers.length;i++) {
+    headers[i].innerText="Harry Styles"
 }
